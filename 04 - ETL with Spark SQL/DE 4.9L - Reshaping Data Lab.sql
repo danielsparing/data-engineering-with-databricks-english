@@ -51,11 +51,11 @@
 -- MAGIC 
 -- MAGIC 
 -- MAGIC ### 1. Pivot **`events`** to count actions for each user
--- MAGIC We want to aggregate the number of times each user performed a specific event, specified in the **`event_name`** column. To do this, group by **`user_id`** and pivot on **`event_name`** to provide a count of every event type in its own column, resulting in the schema below.
+-- MAGIC We want to aggregate the number of times each user performed a specific event, specified in the **`event_name`** column. To do this, group by **`user_id`** (renaming it to **`user`**) and pivot on **`event_name`** to provide a count of every event type in its own column, resulting in the schema below.
 -- MAGIC 
 -- MAGIC | field | type | 
 -- MAGIC | --- | --- | 
--- MAGIC | user_id | STRING |
+-- MAGIC | user | STRING |
 -- MAGIC | cart | BIGINT |
 -- MAGIC | pillows | BIGINT |
 -- MAGIC | login | BIGINT |
