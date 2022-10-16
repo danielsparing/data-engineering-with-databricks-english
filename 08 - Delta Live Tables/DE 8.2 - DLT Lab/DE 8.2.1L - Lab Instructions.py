@@ -105,7 +105,7 @@ DA.print_pipeline_config()
 # MAGIC 1. In the **Storage location** field, enter the path provided in the cell above.
 # MAGIC 1. Enter the location printed next to **`Storage Location`** below in the **Storage Location** field.
 # MAGIC 1. For **Pipeline Mode**, select **Triggered**.
-# MAGIC 1. Uncheck the **Enable autoscaling** box.
+# MAGIC 1. For **Cluster mode**, select **fixed size**.
 # MAGIC 1. Set the number of **`workers`** to **`0`** (zero).
 # MAGIC 1. Enable **Photon Acceleration**.
 # MAGIC 
