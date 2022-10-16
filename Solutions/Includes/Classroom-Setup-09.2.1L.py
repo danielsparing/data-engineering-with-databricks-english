@@ -33,7 +33,7 @@ def print_pipeline_config(self):
         <td style="white-space:nowrap; width:1em">Notebook Path:</td>
         <td><input type="text" value="{notebook}" style="width:100%"></td></tr>
     <tr>
-        <td style="white-space:nowrap; width:1em">Datsets Path:</td>
+        <td style="white-space:nowrap; width:1em">Datasets Path:</td>
         <td><input type="text" value="{DA.paths.datasets}" style="width:100%"></td></tr>
     <tr>
         <td style="white-space:nowrap; width:1em">Source:</td>
