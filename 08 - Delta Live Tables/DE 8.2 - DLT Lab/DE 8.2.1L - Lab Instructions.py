@@ -103,7 +103,6 @@ DA.print_pipeline_config()
 # MAGIC 1. In the **Target** field, enter the database name provided in the cell above.<br/>
 # MAGIC This should follow the pattern **`da_<name_<hash>_dewd_dlt_lab_82`**
 # MAGIC 1. In the **Storage location** field, enter the path provided in the cell above.
-# MAGIC 1. Enter the location printed next to **`Storage Location`** below in the **Storage Location** field.
 # MAGIC 1. For **Pipeline Mode**, select **Triggered**.
 # MAGIC 1. Uncheck the **Enable autoscaling** box.
 # MAGIC 1. Set the number of **`workers`** to **`0`** (zero).
