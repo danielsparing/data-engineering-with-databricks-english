@@ -17,7 +17,7 @@
 # MAGIC * Configures three cluster policies:
 # MAGIC     * **Student's All-Purpose Policy** - which should be used on clusters running standard notebooks.
 # MAGIC     * **Student's Jobs-Only Policy** - which should be used on workflows/jobs
-# MAGIC     * **Student's DLT-Only Policy** - which should be used on DLT piplines (automatically applied)
+# MAGIC     * **Student's DLT-Only Policy** - which should be used on DLT pipelines (automatically applied)
 # MAGIC * Create or update the shared **Starter Warehouse** for use in Databricks SQL exercises
 # MAGIC * Create the Instance Pool **Student's Pool** for use by students and the "student" and "jobs" policies.
 

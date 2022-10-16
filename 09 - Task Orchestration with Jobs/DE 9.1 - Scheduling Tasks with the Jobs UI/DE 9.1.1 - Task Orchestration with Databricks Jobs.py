@@ -70,7 +70,7 @@ DA.print_pipeline_config()
 # MAGIC 
 # MAGIC Finally, click **Create**.
 # MAGIC 
-# MAGIC <img src="https://files.training.databricks.com/images/icon_note_24.png"> **Note**: we won't be executing this pipline directly as it will be executed by our job later in this lesson,<br/>
+# MAGIC <img src="https://files.training.databricks.com/images/icon_note_24.png"> **Note**: we won't be executing this pipeline directly as it will be executed by our job later in this lesson,<br/>
 # MAGIC but if you want to test it real quick, you can click the **Start** button now.
 
 # COMMAND ----------

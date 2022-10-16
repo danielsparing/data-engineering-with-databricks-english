@@ -45,11 +45,11 @@ def print_pipeline_config(self):
 
 @DBAcademyHelper.monkey_patch
 def create_pipeline(self):
-    "Provided by DBAcademy, this function creates the prescribed pipline"
+    "Provided by DBAcademy, this function creates the prescribed pipeline"
     
     pipeline_name, path = self.get_pipeline_config()
 
-    # We need to delete the existing pipline so that we can apply updates
+    # We need to delete the existing pipeline so that we can apply updates
     # because some attributes are not mutable after creation.
     self.client.pipelines().delete_by_name(pipeline_name)
     
@@ -66,7 +66,7 @@ def create_pipeline(self):
         clusters=[{ "label": "default", "num_workers": 0 }])
     
     pipeline_id = response.get("pipeline_id")
-    print(f"Created pipline \"{pipeline_name}\" (#{pipeline_id})")
+    print(f"Created pipeline \"{pipeline_name}\" (#{pipeline_id})")
 
 # COMMAND ----------
 
@@ -78,7 +78,7 @@ def validate_pipeline_config(self):
     pipeline_name, path = self.get_pipeline_config()
 
     pipeline = self.client.pipelines().get_by_name(pipeline_name)
-    assert pipeline is not None, f"The pipline named \"{pipeline_name}\" doesn't exist. Double check the spelling."
+    assert pipeline is not None, f"The pipeline named \"{pipeline_name}\" doesn't exist. Double check the spelling."
 
     spec = pipeline.get("spec")
     
@@ -113,7 +113,7 @@ def validate_pipeline_config(self):
     assert num_workers == 0, f"Expected the number of workers to be 0, found {num_workers}."
 
     development = spec.get("development")
-    assert development == True, f"The pipline mode should be set to \"Development\"."
+    assert development == True, f"The pipeline mode should be set to \"Development\"."
     
     channel = spec.get("channel")
     assert channel is None or channel == "CURRENT", f"Expected the channel to be \"Current\" but found \"{channel}\"."
